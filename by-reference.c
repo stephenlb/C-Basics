@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 void add10(int* number) {
+    // Validate user input
+    if (number == NULL) return;
     *number += 10;
 }
 
