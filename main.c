@@ -3,57 +3,11 @@
 #include <string.h>
 
 /*
-The library function calloc has the following declaration:
-
-void calloc(size_t nmemb, size_t size);
-
-According to the library documentation, “The calloc function allocates memory for an array of nmemb elements of size bytes each. The memory is set to zero. If nmemb or size is zero, then calloc returns NULL.”
-Write an implementation of calloc that performs the allocation by a call to malloc and sets the memory to zero via memset. Your code should not have any vulnerabilities due to arithmetic overflow, and it should work correctly regardless of the number of bits used to represent data of type size_t.
-As a reference, functions malloc and memset have the following declarations:
-
-void malloc(size_t size);
-void memset(voids, int c, size_t n);
-*/
-
-void* stephen_calloc(size_t nmemb, size_t size) {
-    // validate user input
-    if (nmemb <= 0 || size <= 0) {
-        return NULL;
-    }
-
-    // allocate memory based on size
-    void* data = malloc(nmemb * size);
-
-    // if allocation fails
-    if (data == NULL) {
-        return NULL;
-    }
-
-    // set all memo
-    memset(data, 0, nmemb * size);
-    return (void*)data;
-}
-
-void* torva_calloc(size_t nmemb, size_t size) {
-    if (nmemb == 0 || size == 0) {
-        return NULL;
-    }
-    if (nmemb > SIZE_MAX / size) {
-        return NULL;
-    }
-    size_t total = nmemb * size;
-    void *ptr = malloc(total);
-    if (ptr == NULL) {
-        return NULL;
-    }
-    memset(ptr, 0, total);
-    return ptr;
-}
-
-/*
-    TODO: strings (char* )
-    TODO: structs
+    TODO: ✅ Function Pointers for callbacks
+    TODO: ✅ strings (char* )
     TODO: by reference var passing into functions (instead of copy)
+    TODO: structs
+    TODO: macros
     TODO: static var
     TODO: enum
     TODO: recursion
@@ -67,19 +21,37 @@ void* torva_calloc(size_t nmemb, size_t size) {
     TODO: ...
 */
 
-// Define the prototype before defining the function
-int generate_number();
+char* getName() {
+    char* name = malloc(sizeof(char)*10);
+    printf("Enter your name:");
+    scanf("%s", name);
+    return name;
+}
+
+int one(int number) {
+    return number;
+}
+
+int dosomething(int (*callback)(int)) {
+    int out = 974;
+    return callback(out);
+}
 
 int main() { 
-    //char* string = "aslkdfjalksdfjlkasdjfl";
-    char* string = stephen_calloc(10, 10);
-    int num = generate_number();
-    printf("hello!!!\n");
-    printf("%d",num);
-    //free(string);
+    unsigned int number = dosomething(*one);
+    printf("%d\n\n", number);
+    char* name = "kunstewi";
+    char* nameStephen = "Stephen";
+    char* nameSAQ = "SAQ-3000";
+    char* dynName = getName();
+
+    printf("Hello %s!\n", name);
+    printf("Hello %s!\n", nameStephen);
+    printf("Hello %s!\n", nameSAQ);
+    printf("Hello %s!\n", dynName);
+
+    free(dynName);
+
     return 0;
 }
 
-int generate_number() {
-    return 10;
-}
