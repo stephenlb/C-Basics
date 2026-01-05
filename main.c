@@ -5,8 +5,10 @@
 /*
     TODO: ✅ Function Pointers for callbacks
     TODO: ✅ strings (char* )
-    TODO: by reference var passing into functions (instead of copy)
-    TODO: structs
+    TODO: ✅ by reference var passing into functions (instead of copy)
+    TODO: ✅ structs
+    TODO: ✅ typedef (in structs.c)
+    TODO: unions
     TODO: macros
     TODO: static var
     TODO: enum
