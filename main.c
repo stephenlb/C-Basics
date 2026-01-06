@@ -11,7 +11,7 @@
     TODO: ✅ unions
     TODO: ✅ enum
     TODO: ✅ static var
-    TODO: macros
+    TODO: ✅ macros
     TODO: recursion
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
