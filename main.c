@@ -10,8 +10,8 @@
     TODO: ✅ typedef (in structs.c)
     TODO: ✅ unions
     TODO: ✅ enum
-    TODO: macros
     TODO: static var
+    TODO: macros
     TODO: recursion
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
