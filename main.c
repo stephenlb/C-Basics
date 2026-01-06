@@ -8,10 +8,10 @@
     TODO: ✅ by reference var passing into functions (instead of copy)
     TODO: ✅ structs
     TODO: ✅ typedef (in structs.c)
-    TODO: unions
+    TODO: ✅ unions
+    TODO: ✅ enum
     TODO: macros
     TODO: static var
-    TODO: enum
     TODO: recursion
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
