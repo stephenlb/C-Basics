@@ -10,7 +10,7 @@
     TODO: ✅ typedef (in structs.c)
     TODO: ✅ unions
     TODO: ✅ enum
-    TODO: static var
+    TODO: ✅ static var
     TODO: macros
     TODO: recursion
     TODO: header files.h

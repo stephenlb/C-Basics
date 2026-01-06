@@ -6,17 +6,20 @@
    ✅ Function Pointers for callbacks
 */
 
-int one(int number) {
+int log_to_disk(int number) {
+    // TODO LOG TO DISK
+    // TODO Log to statsD
+    // TODO Save to local var for prometheous
     return number;
 }
 
-int dosomething(int (*callback)(int)) {
+int dosomething(int (*whatever)(int)) {
     int out = 974;
-    return callback(out);
+    return whatever(out);
 }
 
 int main() { 
-    unsigned int number = dosomething(*one);
+    unsigned int number = dosomething(*log_to_disk);
     printf("%d\n\n", number);
     return 0;
 }
