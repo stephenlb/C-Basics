@@ -5,6 +5,7 @@
 /*
     TODO: ✅ Function Pointers for callbacks
     TODO: ✅ strings (char* )
+    TODO: ✅ malloc calloc
     TODO: ✅ by reference var passing into functions (instead of copy)
     TODO: ✅ structs
     TODO: ✅ typedef (in structs.c)
@@ -12,14 +13,17 @@
     TODO: ✅ enum
     TODO: ✅ static var
     TODO: ✅ macros
+    TODO: ✅ update vim rc to disable copilot 
+    TODO: ✅ Git common workflow
+    TODO: Revisit malloc calloc
     TODO: recursion
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
+    TODO: bitwise logic operators vs bitshifiting operators
     TODO: careful about memory boundries (over/under runs)
     TODO: Heap/Stack allocation ( differences )  Heap with Malloc
     TODO: reading files
     TODO: reading and writing STDIO STDERR
-    TODO: bitwise logic operators vs bitshifiting operators
     TODO: ...
 */
 
