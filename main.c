@@ -15,12 +15,14 @@
     TODO: ✅ macros
     TODO: ✅ update vim rc to disable copilot 
     TODO: ✅ Git common workflow
-    TODO: Revisit malloc calloc
-    TODO: recursion
+    TODO: ✅ Dockerfile with FROM scratch for fastest possible container
+    TODO: ✅ Revisit malloc
+    TODO: ✅ recursion
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
     TODO: bitwise logic operators vs bitshifiting operators
     TODO: careful about memory boundries (over/under runs)
+    TODO: Networking with sockets
     TODO: Heap/Stack allocation ( differences )  Heap with Malloc
     TODO: reading files
     TODO: reading and writing STDIO STDERR

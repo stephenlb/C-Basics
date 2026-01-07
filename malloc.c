@@ -8,6 +8,8 @@ char* make_string(int number_of_chars) {
 
 int main() {
     char* str = make_string(100);
+    if (str == NULL) return 0;
     printf("hello!");
+    free(str);
     return 0;
 }

@@ -5,7 +5,7 @@ WORKDIR /build
 COPY malloc.c .
 RUN gcc -static malloc.c -o malloc
 
-## Runtime Container
+## Fast Runtime Container
 FROM scratch
 COPY --from=builder /build/malloc /malloc
 CMD ["/malloc"]
