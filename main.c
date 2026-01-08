@@ -20,6 +20,7 @@
     TODO: ✅ Revisit malloc
     TODO: ✅ recursion
     TODO: ✅ Heap/Stack allocation ( differences )  Heap with Malloc
+    TODO: prototypes
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
     TODO: bitwise logic operators vs bitshifiting operators
