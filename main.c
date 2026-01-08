@@ -3,6 +3,7 @@
 #include <string.h>
 
 /*
+    C Basics Tutorials
     TODO: ✅ Function Pointers for callbacks
     TODO: ✅ strings (char* )
     TODO: ✅ malloc calloc
@@ -18,13 +19,14 @@
     TODO: ✅ Dockerfile with FROM scratch for fastest possible container
     TODO: ✅ Revisit malloc
     TODO: ✅ recursion
+    TODO: ✅ Heap/Stack allocation ( differences )  Heap with Malloc
     TODO: header files.h
     TODO: Bitshifting / Bitwise operators
     TODO: bitwise logic operators vs bitshifiting operators
     TODO: careful about memory boundries (over/under runs)
-    TODO: Networking with sockets
-    TODO: Heap/Stack allocation ( differences )  Heap with Malloc
     TODO: reading files
+    TODO: REGEX
+    TODO: Friday Jan 9th: Networking with sockets
     TODO: reading and writing STDIO STDERR
     TODO: ...
 */
