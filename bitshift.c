@@ -4,19 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int is_32_bit_int_system() {
-    return 1 << 32 < 0 ? 0 : 1;
+int is_32_bit_int() {
+    int number = 1;
+    number = number << 31;
+    printf("number: %d\n", number);
+
+    return number < 0 ? 1 : 0;
 }
 int main() {
-/*
     printf("%d\n", 1<<1);
     printf("%d\n", 1<<2);
     printf("%d\n", 1<<3);
     printf("%d\n", 1<<4);
-    printf("%d\n", 1<<32);
-    */
-
-    int is32 = is_32_bit_int_system();
+    printf("%d\n", 1<<5);
+    int is32 = is_32_bit_int();
     printf("Is 32 Bit: %d\n", is32);
     return 0;
 }
