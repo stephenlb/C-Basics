@@ -18,7 +18,7 @@ int main() {
     // DataGram TUPLE (in IP, out IP, in PORT, out PORT, proto)
     // 0.0.0.0 : 8900
     struct sockaddr_in server_address = {
-        AF_INET, (unsigned char)PORT, INADDR_ANY
+        AF_INET, INADDR_ANY, htons(PORT)
     };
 
     bind(serverfd, (struct sockaddr *)&server_address, sizeof(server_address));
